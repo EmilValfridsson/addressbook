@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState } from "react";
-import { useEmployees } from "../hooks/useEmployees";
+import { useRef, useState } from "react";
+
 import { User } from "../types";
 
 interface Props {
@@ -25,7 +25,7 @@ export function DetailsModal({ id, users }: Props) {
   }
   return (
     <>
-      <button className="btn btn-ghost text-white" onClick={openModal}>
+      <button className="btn btn-ghost rounded-box" onClick={openModal}>
         Details
       </button>
       <dialog id="modal" className="modal" ref={modalRef}>
