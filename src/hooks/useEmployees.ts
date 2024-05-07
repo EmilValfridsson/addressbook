@@ -7,7 +7,7 @@ export function useEmployees() {
   useEffect(() => {
     async function fetch() {
       const response: AxiosResponse<{ results: User[] }> = await axios.get(
-        "https://randomuser.me/api/?results=20"
+        "https://randomuser.me/api/?results=50"
       );
 
       const employees = response.data.results;

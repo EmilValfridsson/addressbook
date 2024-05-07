@@ -54,3 +54,8 @@ export interface User {
   };
   nat: string;
 }
+
+export interface SortColumn {
+  path: "name.first";
+  order: "asc" | "desc";
+}
