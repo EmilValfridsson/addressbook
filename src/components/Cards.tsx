@@ -3,6 +3,7 @@ import { useSearchContext } from "../context/SearchContext";
 import { useEmployees } from "../hooks/useEmployees";
 import { SortColumn } from "../types";
 import _ from "lodash";
+import { DetailsModal } from "../modal/DetailsModal";
 
 export function Cards() {
   const { employees } = useEmployees();
@@ -58,6 +59,7 @@ export function Cards() {
                 <p>{e.email}</p>
               </div>
             </div>
+            <DetailsModal id={e.login.uuid} users={sortedEmployees} />
           </div>
         ))}
       </div>
