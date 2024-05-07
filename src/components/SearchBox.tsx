@@ -1,9 +1,5 @@
 import { useSearchContext } from "../context/SearchContext";
 
-interface Props {
-  value: string;
-  onChange(value: string): void;
-}
 function SearchBox() {
   const { searchValue, handleSearch } = useSearchContext();
   return (

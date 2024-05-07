@@ -1,4 +1,4 @@
-import SearchBox from "../common/SearchBox";
+import SearchBox from "../components/SearchBox";
 import { Cards } from "../components/Cards";
 import { Header } from "../components/Header";
 
