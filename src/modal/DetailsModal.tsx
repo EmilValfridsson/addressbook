@@ -25,7 +25,7 @@ export function DetailsModal({ id, users }: Props) {
   }
   return (
     <>
-      <button className="btn btn-ghost rounded-box" onClick={openModal}>
+      <button className="btn btn-ghost  rounded-b-box" onClick={openModal}>
         Details
       </button>
       <dialog id="modal" className="modal" ref={modalRef}>

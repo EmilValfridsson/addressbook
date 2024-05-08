@@ -55,8 +55,8 @@ export function Cards() {
                 <h2 className="card-title">
                   {e.name.first} {e.name.last}
                 </h2>
-                <p>{e.phone}</p>
-                <p>{e.email}</p>
+                <p>Phone: {e.phone}</p>
+                <p>Mail: {e.email}</p>
               </div>
             </div>
             <DetailsModal id={e.login.uuid} users={sortedEmployees} />
